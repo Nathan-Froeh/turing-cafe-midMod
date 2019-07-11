@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box; 
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +15,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.resy-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  height: 200px;
+  width: 200px;
+  border: solid 5px #018080;
+  margin: 10px;
+  background: white;
+}
+
+p {
+  color:#018080;
+  font-size: 20px;
 }
