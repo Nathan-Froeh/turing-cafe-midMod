@@ -12,7 +12,10 @@ const Call = {
 
   postRes(data) {
     return fetch('http://localhost:3001/api/v1/reservations', 
-    {method: 'POST', body: JSON.stringify(data)})
+    {method: 'POST', body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+  }})
     .then(response => console.log(response.json()))
 
   }

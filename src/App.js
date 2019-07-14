@@ -30,6 +30,7 @@ class App extends Component {
       number: number,
       id: id
     }
+    this.setState({reservations: [...this.state.reservations, res]})
     Call.postRes(res)
   }
 
